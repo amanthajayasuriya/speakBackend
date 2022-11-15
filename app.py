@@ -64,13 +64,13 @@ def upload_file_heshiki():
             print(decision)
 
             #generate speech sound
-            sound = gtts.gTTS(decision)
+            #sound = gtts.gTTS(decision)
             #save speech sound in mp3 file
-            sound.save("decision.mp3")
-            os.remove('decision.mp3')
-            sound.save("decision.mp3")
+            #sound.save("decision.mp3")
+            #os.remove('decision.mp3')
+            #sound.save("decision.mp3")
             #time.sleep(1)
-            playsound("decision.mp3")
+            #playsound("decision.mp3")
 
             return jsonify({'result':decision})
 
@@ -109,11 +109,11 @@ def upload_file_praboda():
             print(emotion)
 
             #generate speech sound
-            sound = gtts.gTTS(emotion)
+            #sound = gtts.gTTS(emotion)
             #save speech sound in mp3 file
-            sound.save("emotion.mp3")
-            os.remove('emotion.mp3')
-            sound.save("emotion.mp3")
+           # sound.save("emotion.mp3")
+            #os.remove('emotion.mp3')
+            #sound.save("emotion.mp3")
             #time.sleep(1)
             playsound("emotion.mp3")
 
